@@ -7,6 +7,7 @@ import Home from '../pages/Home'
 import Index from '../pages/Index'
 import Login from '../pages/Login'
 import Users from '../pages/Users'
+import Register from '../pages/Register'
 
 
 function Routes() {
@@ -17,6 +18,7 @@ function Routes() {
       <Route path='/index' component={Index}/>
       <Route path='/login' component={Login}/>
       <Route path='/users' component={Users}/>
+      <Route path='/register' component={Register}/>
     </Switch>
   )
 }

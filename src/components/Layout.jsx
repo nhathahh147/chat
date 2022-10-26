@@ -14,12 +14,12 @@ function Layout() {
         render={(props) => (
           <div className="app">
             <Header />
-            <div className="container grid">
-              <div className="row">
-                <div className="lists col l-2 m-0 c-0">
+            <div className="container grid wide">
+              <div className="row sm-gutter">
+                <div className="lists col l-2 ">
                   <Lists {...props} />
                 </div>
-                <div className="main col l-10 m-12 c-12">
+                <div className="main col l-10">
                   <Routes />
                 </div>
               </div>

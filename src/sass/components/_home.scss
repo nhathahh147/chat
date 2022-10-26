@@ -1,0 +1,24 @@
+.info {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: #ccc;
+    border-radius: 2px;
+    height: 80px;
+}
+
+.info__title {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+.info__number {
+    position: absolute;
+    font-size: 1.8rem;
+    padding: 5px;
+    right: 0;
+    bottom: 0;
+}

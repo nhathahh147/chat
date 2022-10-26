@@ -1,0 +1,39 @@
+.category {
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.category__heading {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+    padding: 16px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.category-list {
+    padding: 0 0 8px 0;
+    list-style: none; /* bỏ chấm đầu dòng */
+}
+
+.category-item {
+    position: relative;
+}
+
+.category-item--active .category-item__link {
+    color: #EE4D2D;
+}
+
+.category-item__link {
+    position: relative;
+    color: #333;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: block;
+}
+
+.category-item__link:hover {
+    color: #EE4D2D;
+}
