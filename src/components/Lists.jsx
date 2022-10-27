@@ -13,6 +13,18 @@ const mainNav = [
     display: "Chat",
     path: "/chat",
   },
+  {
+    display: "Login",
+    path: "/login",
+  },
+  {
+    display: "Register",
+    path: "/register",
+  },
+  {
+    display: "Index",
+    path: "/index",
+  },
 ];
 
 const Lists = () => {
