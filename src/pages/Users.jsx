@@ -2,31 +2,31 @@ import React from 'react'
 
 const mainInfo = [
   {
-    name: "Số lượng truy cập",
+    name: "Nguyễn Văn A",
     id: "1",
     chat: "1",
     admin: "1",
   },
   {
-    name: "Hiện đang online",
+    name: "Nguyễn Văn A",
     id: "2",
     chat: "1",
     admin: "1",
   },
   {
-    name: "Người đăng ký mới",
+    name: "Nguyễn Văn A",
     id: "3",
     chat: "1",
     admin: "1",
   },
   {
-    name: "Tăng trưởng",
+    name: "Nguyễn Văn A",
     id: "4",
     chat: "1",
     admin: "1",
   },
   {
-    name: "Danh thu",
+    name: "Nguyễn Văn A",
     id: "5",
     chat: "1",
     admin: "1",

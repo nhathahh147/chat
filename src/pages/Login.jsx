@@ -15,7 +15,7 @@ function Login() {
         <label for="pwd">Mật Khẩu:</label>
         <input type="password" className="form-control" placeholder="Mật Khẩu" id="pwd" />
       </div>
-      <button type="submit" className="btn btn-primary">Đăng Nhập</button>
+      <button type="submit" className="btn btn-link"><a href="/users">Đăng Nhập</a></button>
     </form>
     </div>
   )
