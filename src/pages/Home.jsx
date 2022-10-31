@@ -1,33 +1,27 @@
-import React from "react";
-
-const mainInfo = [
-  {
-    display: "Số lượng truy cập",
-    number: "899",
-  },
-  {
-    display: "Hiện đang online",
-    number: "456",
-  },
-  {
-    display: "Người đăng ký mới",
-    number: "1236",
-  },
-  {
-    display: "Tăng trưởng",
-    number: "1236",
-  },
-  {
-    display: "Danh thu",
-    number: "1236",
-  },
-];
+import React, { useState, useEffect } from "react";
+import { db } from "../firebase";
+import { ref, onValue } from 'firebase/database';
 
 function Home() {
+
+  const [list , setList] = useState("");
+  const [lists , setLists] = useState([]);
+
+  useEffect(() => {
+    onValue(ref(db), (snapshot) => {
+      const data = snapshot.val();
+      if(data !== null) {
+        Object.values(data).map((lists) => {
+          setLists((props) => [...props, lists]);
+        });
+      };
+    });
+  }, []);
+
   return (
     <div className="row sm-gutter">
 
-      {mainInfo.map((item, index) => (
+      {lists.map((item, index) => (
         <div className="col l-2-4 m-4 c-6">
           <div className="info" key={index}>
             <div className="info__title">{item.display}</div>
